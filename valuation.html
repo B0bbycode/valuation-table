@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuation Table</title>
+    <link rel="stylesheet" href="valuation.css">
+</head>
+
+<body>
+    <form id="valuation-form-holder">
+        <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" id="company-name" required>
+        </div>
+        <div class="form-group">
+            <label for="rs-amount">Amount You're Raising</label>
+            <input type="number" id="rs-amount" required>
+        </div>
+        <div class="form-group">
+            <label for="pre-amount">Pre-Money Valuation</label>
+            <input type="number" id="pre-amount">
+        </div>
+        <input type="submit" id="submit" value="Submit">
+        <div id="result"></div>
+
+    </form>
+    <script src="valuation.js"></script>
+</body>
+
+</html>

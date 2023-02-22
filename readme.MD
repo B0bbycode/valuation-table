@@ -1,0 +1,1 @@
+Calculate how much equity you lose when raising funds for your company.
