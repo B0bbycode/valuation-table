@@ -67,3 +67,26 @@ input[type="number"] {
 .result {
     display: none;
 }
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+#submit {
+    margin-right: 10px;
+}
+
+#clear-input {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#clear-input:hover {
+    background-color: #c0392b;
+}

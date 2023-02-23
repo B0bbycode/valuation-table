@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <form id="valuation-form-holder">
         <div class="form-group">
             <label for="company-name">Company Name</label>
@@ -23,10 +24,14 @@
             <label for="pre-amount">Pre-Money Valuation</label>
             <input type="number" id="pre-amount" pattern="\d*" oninput="formatNumber(this)" required>
         </div>
-        <input type="submit" id="submit" value="Submit">
+        <div class="button-group">
+            <input type="submit" id="submit" value="Submit">
+            <input type="submit" id="clear-input" value="Clear Input">
+        </div>
         <div id="result"></div>
-
     </form>
+
+
     <script src="valuation.js"></script>
 </body>
 
