@@ -20,9 +20,11 @@ form.addEventListener("submit", function(event) {
 
     // Calculate the percentage of ownership the company will give up
     const ownershipPercentage = ((amountRaised * 100) / preMoneyValuation);
+    // Calculate the share unit the amount invested is worth
+    const perShareUnit = (amountRaised / (ownershipPercentage));
 
     // Format the result message
-    const resultMessage = `Dear ${companyName}, you will be required to give away ${ownershipPercentage.toFixed(2)}% worth of equity for raising $${amountRaised.toLocaleString()} at a pre-money valuation of $${preMoneyValuation.toLocaleString()} at $${(amountRaised / ownershipPercentage).toLocaleString()} per share.`;
+    const resultMessage = `Dear ${companyName}, you will be required to give away ${ownershipPercentage.toFixed(2)}% worth of equity for raising $${amountRaised.toLocaleString()} at a pre-money valuation of $${preMoneyValuation.toLocaleString()}.`;
 
     // Set the result message in the result element
     resultElement.innerText = resultMessage;
